@@ -153,38 +153,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   items.forEach(item => observer.observe(item));
 })();
 
-/* ── 5. SKILLS TABS (compétences / projets) ──────────────── */
-(function initTabs() {
-  const tabs = $$('.skill-tab');
-  const panels = $$('.skill-panel');
-
-  function activateTab(targetId) {
-    tabs.forEach(t => t.classList.toggle('active', t.dataset.tab === targetId));
-
-    panels.forEach(p => {
-      if (p.id === 'tab-' + targetId) {
-        p.classList.add('active');
-        // Petit délai pour que display:block soit pris en compte avant l'animation
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => p.classList.add('fade-in'));
-        });
-      } else {
-        p.classList.remove('active', 'fade-in');
-      }
-    });
-  }
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => activateTab(tab.dataset.tab));
-  });
-
-  // Active le premier onglet au chargement
-  if (tabs.length) {
-    activateTab(tabs[0].dataset.tab);
-  }
-})();
-
-/* ── 6. MODAL PROJETS ────────────────────────────────────── */
+/* ── 5. MODAL PROJETS ────────────────────────────────────── */
 (function initModal() {
   const backdrop  = $('#projectModal');
   const closeBtn  = $('#modalClose');
@@ -304,7 +273,7 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   backdrop.addEventListener('click', e => { if (e.target === backdrop) closeModal(); });
 })();
 
-/* ── 7. FORMULAIRE CONTACT : validation légère ───────────── */
+/* ── 6. FORMULAIRE CONTACT : validation légère ───────────── */
 (function initContactForm() {
   const form = $('#contactForm');
   if (!form) return;
@@ -386,13 +355,13 @@ const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
   });
 })();
 
-/* ── 8. FOOTER : année dynamique ────────────────────────────── */
+/* ── 7. FOOTER : année dynamique ────────────────────────────── */
 (function initFooter() {
   const el = $('#footerYear');
   if (el) el.textContent = new Date().getFullYear();
 })();
 
-/* ── 9. NAVIGATION ACTIVE au scroll ─────────────────────────── */
+/* ── 8. NAVIGATION ACTIVE au scroll ─────────────────────────── */
 (function initActiveNav() {
   const sections = $$('section[id]');
   const navLinks = $$('.nav-links a');

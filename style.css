@@ -456,52 +456,7 @@ body {
 }
 .stage-location svg { flex-shrink: 0; }
 
-/* ── SKILLS TABS ─────────────────────────────────────────── */
-.skills-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .6rem;
-  margin-bottom: 2.5rem;
-}
-
-.skill-tab {
-  font-family: var(--font-mono);
-  font-size: .85rem;
-  display: flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .5rem 1.2rem;
-  background: var(--bg-2);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  color: var(--text-muted);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-.skill-tab:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
-.skill-tab.active {
-  background: var(--bg-3);
-  border-color: var(--accent-green);
-  color: var(--accent-green);
-}
-
-.tab-icon { font-size: 1rem; }
-
-/* ── SKILL PANELS & GRID ─────────────────────────────────── */
-.skill-panel {
-  display: none;
-  opacity: 0;
-  transform: translateY(12px);
-  transition: opacity .35s ease, transform .35s ease;
-}
-.skill-panel.active {
-  display: block;
-}
-.skill-panel.fade-in {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* ── PROJECTS GRID ─────────────────────────────────────── */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

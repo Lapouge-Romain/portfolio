@@ -160,28 +160,13 @@
   <section class="section" id="projects">
     <div class="container">
       <h2 class="section-label">// projets</h2>
-
-      <!-- Onglets compétences -->
-      <div class="skills-tabs reveal-up" id="skillsTabs">
-        <button class="skill-tab active" data-tab="developper">
-          <span class="tab-icon">&lt;/&gt;</span> Développer
-        </button>
-        <button class="skill-tab" data-tab="entreprendre">
-          <span class="tab-icon">◈</span> Entreprendre
-        </button>
-        <!-- Ajouter d'autres onglets de compétences ici -->
-      </div>
-
-      <!-- Panneau : Développer -->
-      <div class="skill-panel active reveal-up" id="tab-developper">
-        <div class="projects-grid">
+      <div class="projects-grid reveal-up">
 
           <!--
             Pour chaque carte :
             - data-title      : titre affiché dans le pop-up
             - data-desc       : texte explicatif
-            - data-link       : URL du site (laisser "#" si pas de lien)
-            - data-langs      : liste séparée par des virgules, ex. "html,css,js,php"
+                - data-langs      : liste séparée par des virgules, ex. "html,css,js,php"
             - data-imgs       : liste d'URLs d'images séparées par " | "
               → La première image sert aussi de miniature sur la carte
           -->
@@ -189,7 +174,6 @@
           <article class="project-card" tabindex="0"
             data-title="Application web — Idemoov"
             data-desc="Conception de maquettes web puis développement complet d'une application web (front-end et back-end) lors de mon stage chez Idemoov à Entzheim."
-            data-link="#"
             data-langs="html,css,js,php"
             data-imgs="images/Idemoov.png | images/Idemoov_2.png">
             <div class="project-img-wrap">
@@ -212,8 +196,7 @@
           <article class="project-card" tabindex="0"
             data-title="Grafana"
             data-desc="Projet Grafana réalisé dans le cadre de la SAE501. Conception d'une plateforme web (Laravel) de supervision de données temporelles. Intégration de tableaux de bord Grafana et optimisation du requêtage de base de données InfluxDB via le langage Flux."
-            data-link="#"
-            data-langs="laraval,js,tailwind,grafana,influxdb"
+            data-langs="laravel,js,tailwind,grafana,influxdb"
             data-imgs="images/grafana1.png | images/grafana-dashboard.png | images/grafana-prod.png | images/grafana-coutss.png | images/grafana-carte.png">
             <div class="project-img-wrap">
               <img src="images/grafana1.png" alt="Projet Grafana" class="project-img" />
@@ -236,8 +219,7 @@
             <article class="project-card" tabindex="0"
             data-title="Application web — gestion de projets"
             data-desc="Développer une application collaborative permettant à une équipe de gérer ses projets en mode Agile (Scrum + Kanban)."
-            data-link="#"
-            data-langs="laravel,js,tailwind,php,MySQL"
+            data-langs="laravel,js,tailwind,php,mysql"
             data-imgs="https://placehold.co/800x450/161b22/3fb950?text=Projet+SAE+501">
             <div class="project-img-wrap">
               <img src="https://placehold.co/800x450/161b22/3fb950?text=Projet+SAE+501" alt="Application web Idemoov" class="project-img" />
@@ -260,7 +242,6 @@
           <article class="project-card" tabindex="0"
             data-title="Site interactif sur le climat"
             data-desc="Conception d'un site web interactif en JavaScript dédié à la sensibilisation écologique : comparaison de l'impact environnemental du secteur aérien face aux alternatives de transport."
-            data-link="#"
             data-langs="html,css,js"
             data-imgs="images/SAE303.png | images/SAE303_2.png | images/SAE303_3.png | images/SAE303_4.png | images/SAE303_5.png">
             <div class="project-img-wrap">
@@ -282,7 +263,6 @@
           <article class="project-card" tabindex="0"
             data-title="Jeu de cartes éducatif"
             data-desc="Conception et développement d’un jeu de cartes pédagogique sur le cycle de l'eau, destiné à un public scolaire."
-            data-link="#"
             data-langs="php,symfony,sql,js"
             data-imgs="images/decripteau1.png | images/decripteau2.png">
             <div class="project-img-wrap">
@@ -302,34 +282,6 @@
             </div>
           </article>
 
-        </div>
-      </div>
-
-      <!-- Panneau : Entreprendre -->
-      <div class="skill-panel" id="tab-entreprendre">
-        <div class="projects-grid">
-
-          <article class="project-card" tabindex="0"
-            data-title="Projet entrepreneurial"
-            data-desc="Décrivez ici votre projet entrepreneurial : contexte, objectif, résultat."
-            data-link="#"
-            data-langs="html"
-            data-imgs="https://placehold.co/800x450/161b22/f0883e?text=Projet+Entreprendre">
-            <div class="project-img-wrap">
-              <img src="https://placehold.co/600x340/161b22/f0883e?text=Projet+Entreprendre" alt="Projet entrepreneurial" class="project-img" />
-              <div class="project-overlay">
-                <span class="overlay-hint">↗ En savoir plus</span>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4 class="project-name">Projet entrepreneurial</h4>
-              <div class="project-langs">
-                <span class="lang-dot html"></span><span class="lang-label">À compléter</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
       </div>
     </div>
   </section>
