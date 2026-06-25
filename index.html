@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Romain Lapouge — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── NAV ───────────────────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="prompt">~/romain.lapouge</span><span class="cursor-blink">_</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about"      data-section="about">      // à propos</a></li>
+      <li><a href="#experience" data-section="experience"> // expérience</a></li>
+      <li><a href="#projects"   data-section="projects">   // projets</a></li>
+      <li><a href="#contact"    data-section="contact">    // me contacter</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── À PROPOS ──────────────────────────────────────────── -->
+  <section class="section hero" id="about">
+    <div class="container">
+
+      <!-- Terminal animé -->
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">bash — portfolio.sh</span>
+        </div>
+        <div class="terminal-body">
+          <div class="typed-block" id="typedBlock"></div>
+        </div>
+      </div>
+
+      <!-- Profil professionnel -->
+      <div class="about-content reveal-up">
+        <div class="about-text">
+          <h2 class="section-label">// profil professionnel</h2>
+          <p class="about-bio">
+            Étudiant en <span class="hl">BUT Métiers du Multimédia et de l'Internet</span> à l'IUT de Haguenau (3ème année), candidat motivé et polyvalent, disponible immédiatement. Passionné par le développement web front-end &amp; back-end et le design d'interface, rigoureux et curieux, je sais m'adapter rapidement aux besoins des équipes et des projets.
+          </p>
+          <div class="about-tags">
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Développement web</span>
+            <span class="tag">Maquette web</span>
+            <span class="tag">Front-end</span>
+            <span class="tag">Back-end</span>
+            <span class="tag">Permis B</span>
+            <span class="tag">Français</span>
+            <span class="tag">Anglais</span>
+          </div>
+          <div class="about-actions">
+            <a class="btn-primary" href="CV_Romain_Lapouge.pdf" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
+              </svg>
+              Voir mon CV
+            </a>
+          </div>
+        </div>
+
+        <!-- Soft skills -->
+        <div class="skills-grid">
+          <span class="skill-chip">Sérieux</span>
+          <span class="skill-chip">Réactif</span>
+          <span class="skill-chip">Motivé</span>
+          <span class="skill-chip">Curieux</span>
+          <span class="skill-chip">Autonome</span>
+          <span class="skill-chip">Discipliné</span>
+          <span class="skill-chip">Travail d'équipe</span>
+          <span class="skill-chip">Adaptabilité</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPÉRIENCE ────────────────────────────────────────── -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-label">// expérience</h2>
+
+      <!-- Formation — frise chronologique -->
+      <div class="subsection reveal-up">
+        <h3 class="subsection-title"><span class="comment">/* formation */</span></h3>
+        <div class="timeline" id="timeline">
+
+          <div class="timeline-item" data-index="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023</span>
+              <h4 class="timeline-title">Baccalauréat Technologique STI2D</h4>
+              <p class="timeline-desc">Option SIN (Systèmes d'Information et Numérique) — Lycée des métiers Heinrich Nessel, Haguenau.</p>
+              <span class="timeline-badge">Lycée</span>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-index="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-year">2023 – aujourd'hui</span>
+              <h4 class="timeline-title">BUT Métiers du Multimédia et de l'Internet</h4>
+              <p class="timeline-desc">3ème année à l'IUT de Haguenau — Développement web, design d'interface, communication numérique, maquettage.</p>
+              <span class="timeline-badge">IUT de Haguenau</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <!-- Stages -->
+      <div class="subsection reveal-up">
+        <h3 class="subsection-title"><span class="comment">/* stages &amp; expériences */</span></h3>
+        <ul class="stage-list">
+
+          <!-- Stage principal : Idemoov -->
+          <li class="stage-item">
+            <div class="stage-header">
+              <span class="stage-company">Idemoov</span>
+              <span class="stage-date">Juin – Juil. 2025</span>
+            </div>
+            <div class="stage-meta">
+              <span class="stage-location">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Entzheim (67960)
+              </span>
+            </div>
+            <div class="stage-role">Développeur Web Stagiaire</div>
+            <p class="stage-desc">Conception de maquettes web et développement d'une application web complète (front-end et back-end).</p>
+            <div class="stage-stack">
+              <span class="tag sm">Maquette web</span>
+              <span class="tag sm">Front-end</span>
+              <span class="tag sm">Back-end</span>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJETS ────────────────────────────────────────────── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-label">// projets</h2>
+
+      <!-- Onglets compétences -->
+      <div class="skills-tabs reveal-up" id="skillsTabs">
+        <button class="skill-tab active" data-tab="developper">
+          <span class="tab-icon">&lt;/&gt;</span> Développer
+        </button>
+        <button class="skill-tab" data-tab="entreprendre">
+          <span class="tab-icon">◈</span> Entreprendre
+        </button>
+        <!-- Ajouter d'autres onglets de compétences ici -->
+      </div>
+
+      <!-- Panneau : Développer -->
+      <div class="skill-panel active reveal-up" id="tab-developper">
+        <div class="projects-grid">
+
+          <!--
+            Pour chaque carte :
+            - data-title      : titre affiché dans le pop-up
+            - data-desc       : texte explicatif
+            - data-link       : URL du site (laisser "#" si pas de lien)
+            - data-langs      : liste séparée par des virgules, ex. "html,css,js,php"
+            - data-imgs       : liste d'URLs d'images séparées par " | "
+              → La première image sert aussi de miniature sur la carte
+          -->
+
+          <article class="project-card" tabindex="0"
+            data-title="Application web — Idemoov"
+            data-desc="Conception de maquettes web puis développement complet d'une application web (front-end et back-end) lors de mon stage chez Idemoov à Entzheim."
+            data-link="#"
+            data-langs="html,css,js,php"
+            data-imgs="images/Idemoov.png | images/Idemoov_2.png">
+            <div class="project-img-wrap">
+              <img src="images/Logo idemoov.jpg" alt="Application web Idemoov" class="project-img" />
+              <div class="project-overlay">
+                <span class="overlay-hint">↗ Voir le projet</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-name">Application web — Idemoov</h4>
+              <div class="project-langs">
+                <span class="lang-dot html"></span><span class="lang-label">HTML</span>
+                <span class="lang-dot css"></span><span class="lang-label">CSS</span>
+                <span class="lang-dot js"></span><span class="lang-label">JavaScript</span>
+                <span class="lang-dot php"></span><span class="lang-label">PHP</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0"
+            data-title="Grafana"
+            data-desc="Projet Grafana réalisé dans le cadre de la SAE501. Conception d'une plateforme web (Laravel) de supervision de données temporelles. Intégration de tableaux de bord Grafana et optimisation du requêtage de base de données InfluxDB via le langage Flux."
+            data-link="#"
+            data-langs="laraval,js,tailwind,grafana,influxdb"
+            data-imgs="images/grafana1.png | images/grafana-dashboard.png | images/grafana-prod.png | images/grafana-coutss.png | images/grafana-carte.png">
+            <div class="project-img-wrap">
+              <img src="images/grafana1.png" alt="Projet Grafana" class="project-img" />
+              <div class="project-overlay">
+                <span class="overlay-hint">↗ Voir le site</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-name">SAE501 - Projet Grafana</h4>
+              <div class="project-langs">
+                <span class="lang-dot laravel"></span><span class="lang-label">Laravel</span>
+                <span class="lang-dot js"></span><span class="lang-label">JavaScript</span>
+                <span class="lang-dot tailwind"></span><span class="lang-label">Tailwind CSS</span>
+                <span class="lang-dot grafana"></span><span class="lang-label">Grafana</span>
+                <span class="lang-dot influxdb"></span><span class="lang-label">InfluxDB</span>
+              </div>
+            </div>
+          </article>
+
+            <article class="project-card" tabindex="0"
+            data-title="Application web — gestion de projets"
+            data-desc="Développer une application collaborative permettant à une équipe de gérer ses projets en mode Agile (Scrum + Kanban)."
+            data-link="#"
+            data-langs="laravel,js,tailwind,php,MySQL"
+            data-imgs="https://placehold.co/800x450/161b22/3fb950?text=Projet+SAE+501">
+            <div class="project-img-wrap">
+              <img src="https://placehold.co/800x450/161b22/3fb950?text=Projet+SAE+501" alt="Application web Idemoov" class="project-img" />
+              <div class="project-overlay">
+                <span class="overlay-hint">↗ Voir le projet</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-name">Application web — gestion de projets</h4>
+              <div class="project-langs">
+                <span class="lang-dot laravel"></span><span class="lang-label">Laravel</span>
+                <span class="lang-dot tailwind"></span><span class="lang-label">Tailwind CSS</span>
+                <span class="lang-dot js"></span><span class="lang-label">JavaScript</span>
+                <span class="lang-dot php"></span><span class="lang-label">PHP</span>
+                <span class="lang-dot mysql"></span><span class="lang-label">MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0"
+            data-title="Site interactif sur le climat"
+            data-desc="Conception d'un site web interactif en JavaScript dédié à la sensibilisation écologique : comparaison de l'impact environnemental du secteur aérien face aux alternatives de transport."
+            data-link="#"
+            data-langs="html,css,js"
+            data-imgs="images/SAE303.png | images/SAE303_2.png | images/SAE303_3.png | images/SAE303_4.png | images/SAE303_5.png">
+            <div class="project-img-wrap">
+              <img src="images/SAE303.png" alt="Site interactif sur le climat" class="project-img" />
+              <div class="project-overlay">
+                <span class="overlay-hint">↗ Voir le projet</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-name">Site interactif sur le climat</h4>
+              <div class="project-langs">
+                <span class="lang-dot html"></span><span class="lang-label">HTML</span>
+                <span class="lang-dot css"></span><span class="lang-label">CSS</span>
+                <span class="lang-dot js"></span><span class="lang-label">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" tabindex="0"
+            data-title="Jeu de cartes éducatif"
+            data-desc="Conception et développement d’un jeu de cartes pédagogique sur le cycle de l'eau, destiné à un public scolaire."
+            data-link="#"
+            data-langs="php,symfony,sql,js"
+            data-imgs="images/decripteau1.png | images/decripteau2.png">
+            <div class="project-img-wrap">
+              <img src="images/decripteau1.png" alt="Jeu de cartes éducatif" class="project-img" />
+              <div class="project-overlay">
+                <span class="overlay-hint">↗ Voir le projet</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-name">Jeu de cartes éducatif</h4>
+              <div class="project-langs">
+                <span class="lang-dot php"></span><span class="lang-label">PHP</span>
+                <span class="lang-dot symfony"></span><span class="lang-label">Symfony</span>
+                <span class="lang-dot sql"></span><span class="lang-label">SQL</span>
+                <span class="lang-dot js"></span><span class="lang-label">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Panneau : Entreprendre -->
+      <div class="skill-panel" id="tab-entreprendre">
+        <div class="projects-grid">
+
+          <article class="project-card" tabindex="0"
+            data-title="Projet entrepreneurial"
+            data-desc="Décrivez ici votre projet entrepreneurial : contexte, objectif, résultat."
+            data-link="#"
+            data-langs="html"
+            data-imgs="https://placehold.co/800x450/161b22/f0883e?text=Projet+Entreprendre">
+            <div class="project-img-wrap">
+              <img src="https://placehold.co/600x340/161b22/f0883e?text=Projet+Entreprendre" alt="Projet entrepreneurial" class="project-img" />
+              <div class="project-overlay">
+                <span class="overlay-hint">↗ En savoir plus</span>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4 class="project-name">Projet entrepreneurial</h4>
+              <div class="project-langs">
+                <span class="lang-dot html"></span><span class="lang-label">À compléter</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MODAL PROJET ───────────────────────────────────────── -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-label="Détail du projet" tabindex="-1">
+    <div class="modal-box">
+
+      <!-- Fermeture -->
+      <button class="modal-close" id="modalClose" aria-label="Fermer">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+
+      <!-- Layout : image à gauche, texte à droite -->
+      <div class="modal-inner">
+
+        <!-- Colonne image + carrousel -->
+        <div class="modal-col-img">
+          <div class="modal-carousel">
+            <div class="carousel-track" id="carouselTrack"></div>
+            <button class="carousel-btn prev" id="carouselPrev" aria-label="Image précédente">‹</button>
+            <button class="carousel-btn next" id="carouselNext" aria-label="Image suivante">›</button>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+        </div>
+
+        <!-- Colonne texte -->
+        <div class="modal-col-text">
+          <span class="modal-tag-line">// projet</span>
+          <h3 class="modal-title" id="modalTitle"></h3>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-langs-wrap">
+            <span class="modal-langs-label">Langages &amp; outils</span>
+            <div class="modal-langs" id="modalLangs"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── ME CONTACTER ───────────────────────────────────────── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-label">// me contacter</h2>
+      <div class="contact-wrap reveal-up">
+        <p class="contact-intro">
+          <span class="comment">// Une question, une idée, une collaboration ?</span><br />
+          Remplissez le formulaire et je vous répondrai rapidement.
+        </p>
+
+        <!-- Infos de contact directes -->
+        <div class="contact-infos">
+          <a href="mailto:romain.lapouge@etu.unistra.fr" class="contact-info-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            romain.lapouge@etu.unistra.fr
+          </a>
+          <a href="tel:0676121662" class="contact-info-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            06 76 12 16 62
+          </a>
+          <span class="contact-info-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Val de Moder, 67350
+          </span>
+        </div>
+
+        <!-- Formulaire -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fname" class="form-label">nom <span class="required">*</span></label>
+            <input type="text" id="fname" name="name" class="form-input" placeholder="Votre nom" required />
+            <span class="field-error" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="fmail" class="form-label">email <span class="required">*</span></label>
+            <input type="email" id="fmail" name="email" class="form-input" placeholder="Votre email" required />
+            <span class="field-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="fmsg" class="form-label">message <span class="required">*</span></label>
+            <textarea id="fmsg" name="message" class="form-input form-textarea" rows="5" placeholder="Votre message..." required></textarea>
+            <span class="field-error" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn-primary btn-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"/>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Envoyer le message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <span class="success-icon">✓</span> Message envoyé — à bientôt !
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-prompt">~/romain.lapouge <span class="accent">$</span> echo "Made with ❤️"</span>
+      <span class="footer-copy">&copy; <span id="footerYear"></span> Romain Lapouge</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
